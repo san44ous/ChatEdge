@@ -29,7 +29,7 @@ const CustomChatCard = (props: CustomChatCardProps) => {
       title={`${firstName} ${lastName}`}
       description={
         messageText === null || messageText.length === 0
-          ? "Say hello!"
+          ? "Напиши сообщение!"
           : messageText
       }
       hasNotification={hasNotification}

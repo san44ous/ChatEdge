@@ -41,10 +41,11 @@ const ChatsPage = () => {
   return (
     <div className="background-image" style={backgroundImage}>
       <div className="background-gradient-light">
+          <div style={styles.titleStyle}>ChatEdge</div>
         <div
           style={{
             position: "relative",
-            top: isMobile ? "0px" : "10vh",
+            top: isMobile ? "0px" : "5vh",
             left: isMobile ? "0px" : "calc(50vw - 3vw - 1.5vw - 35vw)",
             height: isMobile ? "100vh" : "80vh",
             width: isMobile ? "100vw" : "calc(100vw - 10.5vw - 10.5vw)",
@@ -117,6 +118,21 @@ const ChatsPage = () => {
       </div>
     </div>
   );
+};
+const styles = {
+    formContainerStyle: {
+        width: "100%",
+        maxWidth: "650px",
+        //padding: "36px 72px",
+    } as CSSProperties,
+    titleStyle: {
+        fontSize: "24px",
+        fontFamily: "VisbyRoundCF-Heavy",
+        letterSpacing: "0.5px",
+        color: "white",
+        //paddingBottom: "11vw",
+        margin: "15px",
+    } as CSSProperties,
 };
 
 export default ChatsPage;

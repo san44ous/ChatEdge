@@ -64,31 +64,31 @@ const SignUpForm = (props: SignUpFormProps) => {
           setUser(userJson);
         }
       })
-      .catch((e) => console.log("Error", e));
+      .catch((e) => alert("Пользователь с таким email уже создан")) ;
   };
 
   return (
     <div>
-      <div className="form-title">Create an account</div>
+      <div className="form-title">Создание аккуанта</div>
 
       <div className="form-subtitle">
-        Already a member?{" "}
-        <Link onClick={() => props.onHasAccount()}>Log in</Link>
+        Уже регистрировались?{" "}
+        <Link onClick={() => props.onHasAccount()}>Авторизоваться</Link>
       </div>
 
       <form onSubmit={onSubmit}>
         <TextInput
-          label="First name"
+          label="Имя"
           name="first_name"
-          placeholder="Adam"
+          placeholder="Иван"
           style={{ width: isMobile ? "100%" : "calc(50% - 6px)" }}
           onChange={(e) => setFirstName(e.target.value)}
         />
 
         <TextInput
-          label="Last name"
+          label="Фамилия"
           name="last_name"
-          placeholder="La Morre"
+          placeholder="Иванов"
           style={{
             width: isMobile ? "100%" : "calc(50% - 6px)",
             float: "right",
@@ -99,13 +99,13 @@ const SignUpForm = (props: SignUpFormProps) => {
         <TextInput
           label="Email"
           name="email"
-          placeholder="adam@lamorre.co"
+          placeholder="email@mail.com"
           style={{ width: isMobile ? "100%" : "calc(50% - 6px)" }}
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <TextInput
-          label="Password"
+          label="Пароль"
           name="password"
           placeholder="********"
           type="password"
@@ -117,7 +117,7 @@ const SignUpForm = (props: SignUpFormProps) => {
         />
 
         <PhotoInput
-          label="Profile picture"
+          label="Аватар"
           name="avatar"
           id="avatar-picker"
           style={{ width: isMobile ? "100%" : "calc(50% - 6px)" }}
@@ -135,7 +135,7 @@ const SignUpForm = (props: SignUpFormProps) => {
             float: "right",
           }}
         >
-          Sign Up
+          Войти
         </Button>
       </form>
     </div>

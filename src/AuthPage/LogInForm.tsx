@@ -54,29 +54,29 @@ const LogInForm = (props: LogInFormProps) => {
 
   return (
     <div>
-      <div className="form-title">Welcome Back</div>
+      <div className="form-title">Добро пожаловать</div>
 
       <div className="form-subtitle">
-        New here? <Link onClick={() => props.onHasNoAccount()}>Sign Up</Link>
+        Впервые здесь? <Link onClick={() => props.onHasNoAccount()}>Зарегестрироваться</Link>
       </div>
 
       <form onSubmit={onSubmit}>
         <TextInput
           label="Email"
           name="email"
-          placeholder="adam@lamorre.co"
+          placeholder="email@mail.com"
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <TextInput
-          label="Password"
+          label="Пароль"
           name="password"
           placeholder="********"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <Button type="submit">Log In</Button>
+        <Button type="submit">Авторизоваться</Button>
       </form>
     </div>
   );

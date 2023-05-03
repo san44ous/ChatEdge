@@ -2,7 +2,6 @@ import { useContext } from "react";
 
 import {
   LogoutOutlined,
-  HomeFilled,
   MessageFilled,
   SettingFilled,
 } from "@ant-design/icons";
@@ -17,9 +16,8 @@ const Sidebar = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <div className="ce-sidebar-menu">
-        <HomeFilled className="ce-sidebar-icon" />
-        <MessageFilled className="ce-sidebar-icon ce-sidebar-icon-active" />
-        <SettingFilled className="ce-sidebar-icon" />
+            <MessageFilled className="ce-sidebar-icon ce-sidebar-icon-active" />
+            <SettingFilled className="ce-sidebar-icon" />
       </div>
 
       <Avatar

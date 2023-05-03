@@ -39,7 +39,7 @@ const MessageForm = (props: MessageFormProps) => {
       <input
         onChange={(e) => setText(e.target.value)}
         value={text}
-        placeholder="Type something..."
+        placeholder="Напишите сообщение..."
         className="ce-custom-message-input"
       />
 
