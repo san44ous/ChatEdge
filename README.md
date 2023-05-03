@@ -1,12 +1,4 @@
-# Pretty Chat React/Typescript
-
-This project is a pretty full-stack chat app built with React and Typesctipt.
-
-To learn how this project works, watch the following YouTube tutorial.
-
-## Setup
-
-Go to [chatengine.io](https://chatengine.io) and create your own project. There you will get a Project ID and Private Key which are needed for user signup and authentication.
+###ChatEdge react/ts
 
 ### `.env.local`
 
