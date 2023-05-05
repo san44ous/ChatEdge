@@ -102,7 +102,7 @@
 .ce-custom-send-button { cursor: pointer; background-color: rgb(24, 144, 255); border: 1px solid rgb(24, 144, 255); width: 36px; height: 36px; border-radius: 8px; color: white; box-shadow: rgba(24, 144, 255, 0.35) 0px 5px 15px; position: absolute; top: 12px; right: 3.3vw; transition: all .44s ease; }
 .ce-custom-send-button:hover { background-color: #40a9ff; }
 
-.ce-sidebar-menu { position: absolute; top: 30vh; }
+.ce-sidebar-menu { position: absolute; top: 54vh; }
 .ce-sidebar-icon { width: 6vw; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color: rgb(153, 153, 153) !important; }
 .ce-sidebar-icon-active { color: rgb(24, 144, 255) !important; border-left: 2px solid rgb(24, 144, 255); }
 .sidebar-avatar { position: absolute !important; bottom: 66px; left: calc(50% - 22px); border: 1px solid rgb(24, 144, 255); box-shadow: rgb(24 144 255 / 35%) 0px 2px 7px; }
@@ -119,5 +119,60 @@
 .ce-empty-settings { background-color: #282b36 !important; width: 3vw; height: 80vh; }
 
 .ce-ice-breaker-gif{
+    display: none;
+}
 
+.ce-ice-breaker-gif{
+    position: relative!important;
+    border-style: solid!important;
+    box-sizing: border-box!important;
+    border-width: 40px 60px 30px 60px!important;
+    border-color: #3760C9 #96DDFC #96DDFC #36BBF7!important;
+    animation: envFloating 1s ease-in infinite alternate!important;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    right: 62px;
+    top: -40px;
+    height: 70px;
+    width: 50px;
+    background-image: linear-gradient(#fff 45px, transparent 0),
+    linear-gradient(#fff 45px, transparent 0),
+    linear-gradient(#fff 45px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 30px 4px;
+    background-position: 0px 11px , 8px 35px, 0px 60px;
+    animation: envDropping 0.75s linear infinite;
+}
+
+@keyframes envFloating {
+    0% {
+        transform: translate(-2px, -5px)
+    }
+
+    100% {
+        transform: translate(0, 5px)
+    }
+}
+
+@keyframes envDropping {
+    0% {
+        background-position: 100px 11px , 115px 35px, 105px 60px;
+        opacity: 1;
+    }
+
+    50% {
+        background-position: 0px 11px , 20px 35px, 5px 60px;
+    }
+
+    60% {
+        background-position: -30px 11px , 0px 35px, -10px 60px;
+    }
+
+    75%, 100% {
+        background-position: -30px 11px , -30px 35px, -30px 60px;
+        opacity: 0;
+    }
 }
