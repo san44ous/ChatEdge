@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ChatEdge/static/css/main.69b06486.css",
-    "main.js": "/ChatEdge/static/js/main.8bdb8326.js",
+    "main.css": "/ChatEdge/static/css/main.2b6ff49c.css",
+    "main.js": "/ChatEdge/static/js/main.4211b406.js",
     "static/media/valley.jpeg": "/ChatEdge/static/media/valley.e7396bfed7eb653279f1.jpeg",
     "static/media/VisbyRoundCF-Heavy.woff": "/ChatEdge/static/media/VisbyRoundCF-Heavy.5b14967687bb1ecf4295.woff",
     "static/media/VisbyRoundCF-Regular.woff": "/ChatEdge/static/media/VisbyRoundCF-Regular.78ce79eac18796023f1b.woff",
     "static/media/VisbyRoundCF-DemiBold.woff": "/ChatEdge/static/media/VisbyRoundCF-DemiBold.ecce87927ba286ccd634.woff",
     "index.html": "/ChatEdge/index.html",
-    "main.69b06486.css.map": "/ChatEdge/static/css/main.69b06486.css.map",
-    "main.8bdb8326.js.map": "/ChatEdge/static/js/main.8bdb8326.js.map"
+    "main.2b6ff49c.css.map": "/ChatEdge/static/css/main.2b6ff49c.css.map",
+    "main.4211b406.js.map": "/ChatEdge/static/js/main.4211b406.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b06486.css",
-    "static/js/main.8bdb8326.js"
+    "static/css/main.2b6ff49c.css",
+    "static/js/main.4211b406.js"
   ]
 }
